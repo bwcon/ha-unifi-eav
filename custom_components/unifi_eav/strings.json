@@ -1,0 +1,63 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect to UniFi Network",
+        "description": "Use a local UniFi OS account (not Ubiquiti SSO) without MFA. Pro AV must be enabled in the Network application.",
+        "data": {
+          "host": "Console address",
+          "username": "Username",
+          "password": "Password",
+          "site": "Site",
+          "unifi_os": "UniFi OS console",
+          "verify_ssl": "Verify SSL certificate"
+        },
+        "data_description": {
+          "host": "IP or hostname of the console. A scheme and port may be included, e.g. http://localhost:8443 for the mock server.",
+          "site": "UniFi Network site name (usually \"default\").",
+          "unifi_os": "On for UDM/UCG/Cloud Key Gen2 consoles (/proxy/network). Off for a legacy standalone controller.",
+          "verify_ssl": "Leave off for the console's self-signed certificate."
+        }
+      },
+      "reauth_confirm": {
+        "title": "Re-authenticate with UniFi",
+        "description": "The console at {host} rejected the stored credentials. Enter them again.",
+        "data": {
+          "username": "Username",
+          "password": "Password"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Failed to connect to the console. Check the address and network.",
+      "invalid_auth": "Authentication failed. Use a local account without MFA.",
+      "no_proav": "Connected, but the Pro AV endpoints were not found. Enable Pro AV in UniFi Network 10.3 or newer, or check the site name.",
+      "unknown": "An unexpected error occurred."
+    },
+    "abort": {
+      "already_configured": "This console is already configured.",
+      "reauth_successful": "Re-authentication was successful."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "UniFi Pro AV options",
+        "data": {
+          "scan_interval": "Poll interval (seconds)"
+        },
+        "data_description": {
+          "scan_interval": "How often the matrix is read (5-300 seconds). Default 15."
+        }
+      }
+    }
+  },
+  "exceptions": {
+    "unknown_source": {
+      "message": "Unknown source \"{source}\". Pick a transmitter from the source list."
+    },
+    "not_routed": {
+      "message": "Receiver {name} has no source routed. Select a source first."
+    }
+  }
+}
