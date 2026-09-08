@@ -1,0 +1,49 @@
+{
+  "bridges": [
+    "f4:e2:c6:00:00:01",
+    "f4:e2:c6:00:00:02",
+    "f4:e2:c6:00:00:11",
+    "f4:e2:c6:00:00:12",
+    "f4:e2:c6:00:00:13"
+  ],
+  "hosts": ["f4:e2:c6:00:00:01", "f4:e2:c6:00:00:02"],
+  "clients": ["f4:e2:c6:00:00:11", "f4:e2:c6:00:00:12", "f4:e2:c6:00:00:13"],
+  "host_candidates": [],
+  "client_candidates": [],
+  "groups": [
+    {
+      "id": "3f0c9d1e-5b1a-4c8e-9f2d-7a6b5c4d3e2f",
+      "channel": 1,
+      "name": "Apple TV",
+      "type": "VIDEO",
+      "host": {
+        "mac": "f4:e2:c6:00:00:01",
+        "host_type": "VIDEO",
+        "refresh_rate": "AUTO",
+        "enabled": true
+      },
+      "clients": [
+        {
+          "mac": "f4:e2:c6:00:00:11",
+          "client_type": "VIDEO",
+          "mode": "MULTICAST",
+          "resolution": "AUTO",
+          "color_format": "RGB",
+          "audio_enabled": true,
+          "audio_mode": "PCM",
+          "enabled": true
+        },
+        {
+          "mac": "f4:e2:c6:00:00:12",
+          "client_type": "VIDEO",
+          "mode": "MULTICAST",
+          "resolution": "AUTO",
+          "color_format": "RGB",
+          "audio_enabled": true,
+          "audio_mode": "PCM",
+          "enabled": true
+        }
+      ]
+    }
+  ]
+}

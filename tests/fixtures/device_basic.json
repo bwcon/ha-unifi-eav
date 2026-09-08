@@ -1,0 +1,10 @@
+{
+  "meta": {"rc": "ok"},
+  "data": [
+    {"mac": "f4:e2:c6:00:00:01", "name": "Apple TV", "model": "EAV-Bridge", "type": "eav", "state": 1, "adopted": true, "disabled": false},
+    {"mac": "f4:e2:c6:00:00:02", "name": "Cable Box", "model": "EAV-Bridge", "type": "eav", "state": 1, "adopted": true, "disabled": false},
+    {"mac": "f4:e2:c6:00:00:11", "name": "Living Room TV", "model": "EAV-Bridge", "type": "eav", "state": 1, "adopted": true, "disabled": false},
+    {"mac": "f4:e2:c6:00:00:12", "name": "Kitchen TV", "model": "EAV-Bridge", "type": "eav", "state": 1, "adopted": true, "disabled": false},
+    {"mac": "f4:e2:c6:00:00:13", "model": "EAV-Bridge", "type": "eav", "state": 1, "adopted": true, "disabled": false}
+  ]
+}
