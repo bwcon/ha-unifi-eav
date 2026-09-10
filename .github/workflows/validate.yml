@@ -24,7 +24,6 @@ jobs:
       - uses: hacs/action@main
         with:
           category: integration
-          ignore: brands
 
   pytest:
     runs-on: ubuntu-latest
