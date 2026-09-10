@@ -1,6 +1,6 @@
-# Brand images (replace the placeholders)
+# Brand images
 
-Home Assistant 2026.3+ serves these files itself (`/api/brands/integration/unifi_eav/...`); no pull request to `home-assistant/brands` is needed or accepted for custom integrations any more. Drop the final artwork in here with the exact names below, keep them real PNGs (not renamed JPEGs), then bump `manifest.json` version and cut a release.
+Home Assistant 2026.3+ serves these files itself (`/api/brands/integration/unifi_eav/...`); no pull request to `home-assistant/brands` is needed or accepted for custom integrations any more. To update the artwork, replace the files below with real PNGs (not renamed JPEGs), bump the `manifest.json` version and cut a release.
 
 | File | Size | Notes |
 |---|---|---|
