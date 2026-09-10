@@ -5,7 +5,7 @@
 
 Route Ubiquiti **EAV-Bridge** AV-over-IP transmitters to receivers from Home Assistant — a virtual HDMI matrix driven through the UniFi Network application's Pro AV endpoints. Each receiver becomes a `media_player`; its source list is your transmitters.
 
-> **Status: pre-hardware.** Built against the API captured by the community (see [Credits](#credits)) and a local mock console. Not yet validated on real EAV-Bridge hardware; the routing bodies carry `# verify on hardware` notes in the code where an assumption was made.
+> **Work in progress — testing and feedback welcome.** This integration is built against the API captured by the community (see [Credits](#credits)) and a local mock console while we wait for our own EAV-Bridge test units to arrive. It has **not yet been validated on real hardware**. If you already own EAV-Bridges, please try it and [open an issue](https://github.com/bwcon/ha-unifi-eav/issues) with what worked, what did not, and (ideally) a redacted copy of your `GET .../proav/video/matrix` response and the console's Network application version. Assumptions that need hardware confirmation are marked `# verify on hardware` in the code.
 
 ## Features
 
